@@ -6,14 +6,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p><a href="1.html"><h1>BABO</h1></a></p>
+    <a href="1.html"><h1>BABO</h1></a>
     <div id="grid">
         <div class="left">
+            <script>
+                var list = ['체스바보','코딩바보','그냥바보'];
+                var link = ['3.html','4.html','5.html'];
+            </script>
             <h3>list</h3>
             <ol>
-            <li><a href="3.html">체스바보</a></li>
-            <li><a href="4.html">코딩바보</a></li>
-            <li><a href="5.html">그냥바보</a></li>
+                <script>
+                    var i = 0;
+                    while(i < list.length){
+                        document.write(
+                            '<li><a href = "'+link[i]+'">'+list[i]+'</a></li>'
+                        );
+                        i = i + 1;
+                    }
+                </script>
             </ol>
         </div>
         <div class="right">

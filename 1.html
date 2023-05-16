@@ -7,8 +7,20 @@
 
 </head>
 <body>
-    <p><h1>BABO</h1></p>
-    <div class="main">
+    <h1>BABO</h1>
+    <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value ='day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value ='night';
+        }
+    ">
+    <div class = "main">
         <h2>이걸 보는 당신은 <strong><u>'바보'</u></strong>입니다!</h2>
         <p><a href="2.html" style="color: gray; text-decoration: underline;">다양한 바보들 보러가기</a></p>
     </div>
